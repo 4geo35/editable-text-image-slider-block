@@ -11,6 +11,8 @@
                 @include("etisb::admin.types.text-image-slider.item")
                 @include("eb::admin.types.includes.help-info")
             </div>
+            @includeIf("ebtns::admin.btn-component", ["blockItem" => $item])
+            <div class="border-b border-secondary mt-indent"></div>
             <livewire:fa-images :model="$item->recordable"
                                 postfix="GalleryBlock{{ $item->id }}-{{ $item->recordable->id }}"
                                 no-card-cover wire:key="{{ $item->id }}--{{ $item->recordable->id }}" />

@@ -14,6 +14,15 @@ class TextImageSliderWire extends Component
 {
     use WithFileUploads, EditBlockTrait, SimpleItemActionsTrait, CheckBlockAuthTrait, PlaceholderBlockTrait;
 
+    public bool $useMarkdown = false;
+    public int $textConstraint = 400;
+
+    public function mount(): void
+    {
+        $this->textConstraint = config("editable-text-image-slider-block.textConstraint", 400);
+        $this->useMarkdown = $this->textConstraint <= 0;
+    }
+
     public function rules(): array
     {
         $rules = [

@@ -6,7 +6,7 @@ return [
 
     "availableTypes" => [
         "textImageSlider" => [
-            "title" => env("EDITABLE_TEXT_IMAGE_SLIDER_TITLE", "Слайдер с текстом"),
+            "title" => env("EDITABLE_TEXT_IMAGE_SLIDER_TITLE", "Текст со слайдером"),
             "admin" => "etisb-image-slider",
             "render" => "etisb::types.image-slider",
         ],
