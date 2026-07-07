@@ -18,5 +18,7 @@ return [
     // Templates
     "templates" => [
         "text-image-slider-record" => \GIS\EditableTextImageSliderBlock\Templates\TextImageSlider::class,
+        "text-image-slider-record-tablet" => \GIS\EditableTextImageSliderBlock\Templates\TabletTextImageSlider::class,
+        "text-image-slider-record-mobile" => \GIS\EditableTextImageSliderBlock\Templates\MobileTextImageSlider::class,
     ],
 ];
