@@ -50,7 +50,7 @@
                     </div>
                 @else
                     <div class="prose max-w-none prose-p:leading-6">
-                        {!! $item->recordable->description !!}
+                        {!! $item->recordable->markdown !!}
                     </div>
                 @endif
             @endif
